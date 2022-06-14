@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.scalaz.stream" module="scalaz-stream_2.11" revision="0.7.1a" status="release" publication="20210528190445" e:info.apiURL="http://docs.typelevel.org/api/scalaz-stream/stable/0.7.1a/doc/">
+		<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+		<description>
+		scalaz-stream
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="scalaz-stream_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="scalaz-stream_2.11" type="bundle" ext="jar" conf="compile"/>
+		<artifact name="scalaz-stream_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="scalaz-stream_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.6" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-core_2.11" rev="7.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-concurrent_2.11" rev="7.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.scodec" name="scodec-bits_2.11" rev="1.0.6" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-scalacheck-binding_2.11" rev="7.1.0" conf="test->default(compile)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.11" rev="1.12.1" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>

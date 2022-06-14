@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.flywaydb"
+		module="flyway-sbt"
+		revision="3.2.1"
+		status="release"
+		publication="20210528083143"
+		e:sbtVersion="0.13" e:scalaVersion="2.10"
+	>
+		<license name="Apache License, Version 2.0" url="https://github.com/flyway/flyway/blob/master/LICENSE.txt" />
+		<description homepage="" />
+		<m:properties__version.spring>2.5.6</m:properties__version.spring>
+		<m:properties__version.slf4j>1.6.6</m:properties__version.slf4j>
+		<m:dependency.management__org.apache.derby__derby__version>10.11.1.1</m:dependency.management__org.apache.derby__derby__version>
+		<m:dependency.management__org.apache.maven__maven-model__version>2.2.1</m:dependency.management__org.apache.maven__maven-model__version>
+		<m:properties__version.sqlite>3.7.15-M1</m:properties__version.sqlite>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.2</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.apache.maven__maven-artifact__version>2.2.1</m:dependency.management__org.apache.maven__maven-artifact__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__scope>test</m:dependency.management__ch.qos.logback__logback-classic__scope>
+		<m:dependency.management__com.google.android__android__version>4.0.1.2</m:dependency.management__com.google.android__android__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.6.6</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.apache.ant__ant__version>1.8.4</m:dependency.management__org.apache.ant__ant__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.1</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.6</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>2.5.6</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__version.derby>10.11.1.1</m:properties__version.derby>
+		<m:dependency.management__org.apache.maven__maven-project__version>2.2.1</m:dependency.management__org.apache.maven__maven-project__version>
+		<m:dependency.management__org.apache.derby__derbyclient__version>10.11.1.1</m:dependency.management__org.apache.derby__derbyclient__version>
+		<m:dependency.management__org.mockito__mockito-core__version>1.9.5</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.apache.maven__maven-core__version>2.2.1</m:dependency.management__org.apache.maven__maven-core__version>
+		<m:dependency.management__com.google.appengine__appengine-api-stubs__version>1.9.10</m:dependency.management__com.google.appengine__appengine-api-stubs__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>2.2.1</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:properties__version.equinoxcommon>3.6.0.v20100503</m:properties__version.equinoxcommon>
+		<m:properties__version.jtds>1.3.1</m:properties__version.jtds>
+		<m:dependency.management__com.google.appengine__appengine-api-labs__version>1.9.10</m:dependency.management__com.google.appengine__appengine-api-labs__version>
+		<m:dependency.management__com.ibm.db2__db2jcc4__version>4.17.29</m:dependency.management__com.ibm.db2__db2jcc4__version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+		<m:dependency.management__com.oracle__server-jre__version>8.31</m:dependency.management__com.oracle__server-jre__version>
+		<m:properties__sbtVersion>0.13</m:properties__sbtVersion>
+		<m:properties__version.jre>8.31</m:properties__version.jre>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__com.oracle__jre__version>8.31</m:dependency.management__com.oracle__jre__version>
+		<m:properties__version.maven>2.2.1</m:properties__version.maven>
+		<m:dependency.management__com.ibm__SolidDriver__version>6.5.0.14_IF21</m:dependency.management__com.ibm__SolidDriver__version>
+		<m:dependency.management__org.slf4j__slf4j-nop__version>1.6.6</m:dependency.management__org.slf4j__slf4j-nop__version>
+		<m:properties__version.equinox>3.6.0.v20100517</m:properties__version.equinox>
+		<m:properties__scalaVersion>2.10</m:properties__scalaVersion>
+		<m:properties__version.mariadb>1.1.7</m:properties__version.mariadb>
+		<m:properties__version.h2>1.3.170</m:properties__version.h2>
+		<m:dependency.management__org.postgresql__postgresql__version>9.3-1102-jdbc4</m:dependency.management__org.postgresql__postgresql__version>
+		<m:dependency.management__com.google.android__android-test__version>4.0.1.2</m:dependency.management__com.google.android__android-test__version>
+		<e:sbtTransformHash>7ea0a3389c98708b91fac6ea6ddb216af6984759</e:sbtTransformHash>
+		<m:dependency.management__mysql__mysql-connector-java__version>5.1.12</m:dependency.management__mysql__mysql-connector-java__version>
+		<m:dependency.management__com.oracle__ojdbc6__version>12.1.0.1</m:dependency.management__com.oracle__ojdbc6__version>
+		<m:dependency.management__com.microsoft.sqlserver__sqljdbc4__version>4.0.2206.100</m:dependency.management__com.microsoft.sqlserver__sqljdbc4__version>
+		<m:dependency.management__com.google.appengine__appengine-api-1.0-sdk__version>1.9.10</m:dependency.management__com.google.appengine__appengine-api-1.0-sdk__version>
+		<m:maven.plugins>org.codehaus.mojo__animal-sniffer-maven-plugin__1.10|null__maven-compiler-plugin__null|null__maven-resources-plugin__2.6|null__maven-source-plugin__2.1.2|org.codehaus.mojo__versions-maven-plugin__2.1|null__maven-scm-plugin__1.8.1|com.mycila.maven-license-plugin__maven-license-plugin__1.9.0|null__maven-surefire-plugin__null|null__maven-failsafe-plugin__null|null__maven-enforcer-plugin__1.0.1|null__maven-deploy-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__1.10|null__maven-compiler-plugin__null|null__maven-resources-plugin__2.6|null__maven-source-plugin__2.1.2|org.codehaus.mojo__versions-maven-plugin__2.1|null__maven-scm-plugin__1.8.1|com.mycila.maven-license-plugin__maven-license-plugin__1.9.0|null__maven-surefire-plugin__null|null__maven-failsafe-plugin__null|null__maven-enforcer-plugin__1.0.1|null__maven-deploy-plugin__null|null__maven-resources-plugin__null|org.codehaus.mojo__exec-maven-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null</m:maven.plugins>
+		<m:properties__version.gradle>1.6</m:properties__version.gradle>
+		<m:dependency.management__com.h2database__h2__version>1.3.170</m:dependency.management__com.h2database__h2__version>
+		<m:dependency.management__com.vertica__vertica-jdbc__version>7.0.0-0</m:dependency.management__com.vertica__vertica-jdbc__version>
+		<m:properties__version.appengine>1.9.10</m:properties__version.appengine>
+		<m:properties__version.postgresql>9.3-1102-jdbc4</m:properties__version.postgresql>
+		<m:dependency.management__com.google.appengine__appengine-testing__version>1.9.10</m:dependency.management__com.google.appengine__appengine-testing__version>
+		<m:dependency.management__org.eclipse.equinox__org.eclipse.equinox.common__version>3.6.0.v20100503</m:dependency.management__org.eclipse.equinox__org.eclipse.equinox.common__version>
+		<m:dependency.management__org.eclipse.osgi__org.eclipse.osgi__version>3.6.0.v20100517</m:dependency.management__org.eclipse.osgi__org.eclipse.osgi__version>
+		<m:dependency.management__org.xerial__sqlite-jdbc__version>3.7.15-M1</m:dependency.management__org.xerial__sqlite-jdbc__version>
+		<m:dependency.management__net.sourceforge.jtds__jtds__version>1.3.1</m:dependency.management__net.sourceforge.jtds__jtds__version>
+		<m:properties__version.android>4.0.1.2</m:properties__version.android>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.6.6</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.jboss__jboss-vfs__version>3.1.0.Final</m:dependency.management__org.jboss__jboss-vfs__version>
+		<m:properties__sbtArtifactDir>${project.build.directory}/scala-${scalaVersion}/sbt-${sbtVersion}</m:properties__sbtArtifactDir>
+		<m:dependency.management__org.mariadb.jdbc__mariadb-java-client__version>1.1.7</m:dependency.management__org.mariadb.jdbc__mariadb-java-client__version>
+		<m:properties__version.hsqldb>2.3.2</m:properties__version.hsqldb>
+		<m:dependency.management__org.hsqldb__hsqldb__version>2.3.2</m:dependency.management__org.hsqldb__hsqldb__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="flyway-sbt" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.flywaydb" name="flyway-core" rev="3.2.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+	</dependencies>
+</ivy-module>

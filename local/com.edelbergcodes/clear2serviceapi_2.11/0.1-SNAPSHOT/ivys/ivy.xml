@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="com.edelbergcodes" module="clear2serviceapi_2.11" revision="0.1-SNAPSHOT" status="integration" publication="20220611103019">
+    <description>Clear2ServiceAPI</description>
+  </info>
+  <configurations>
+    <conf name="plugin" visibility="public" description=""/>
+    <conf name="pom" visibility="public" description=""/>
+    <conf extends="runtime" name="test" visibility="public" description=""/>
+    <conf name="provided" visibility="public" description=""/>
+    <conf extends="compile,optional,provided" name="compile-internal" visibility="public" description=""/>
+    <conf name="docs" visibility="public" description=""/>
+    <conf name="optional" visibility="public" description=""/>
+    <conf name="compile" visibility="public" description=""/>
+    <conf extends="test,optional,provided" name="test-internal" visibility="public" description=""/>
+    <conf name="scala-tool" visibility="public" description=""/>
+    <conf name="sources" visibility="public" description=""/>
+    <conf extends="compile" name="runtime" visibility="public" description=""/>
+    <conf extends="runtime,optional" name="runtime-internal" visibility="public" description=""/>
+  </configurations>
+  <publications>
+    <artifact e:classifier="javadoc" name="clear2serviceapi_2.11" type="doc" ext="jar" conf="docs"/>
+    <artifact e:classifier="sources" name="clear2serviceapi_2.11" type="src" ext="jar" conf="sources"/>
+    <artifact name="clear2serviceapi_2.11" type="jar" ext="jar" conf="compile"/>
+    <artifact name="clear2serviceapi_2.11" type="pom" ext="pom" conf="pom"/>
+  </publications>
+  <dependencies>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->optional(default)"> </dependency>
+    <dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.http4s" name="http4s-argonaut_2.11" rev="0.8.6" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.http4s" name="http4s-blazeclient_2.11" rev="0.8.6" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.http4s" name="http4s-dsl_2.11" rev="0.8.6" conf="compile->default(compile)"> </dependency>
+    <dependency org="com.typesafe.slick" name="slick_2.11" rev="2.1.0" conf="compile->default(compile)"> </dependency>
+    <dependency org="com.amazonaws" name="aws-java-sdk-s3" rev="1.10.56" conf="compile->default(compile)"> </dependency>
+    <dependency org="com.amazonaws" name="aws-java-sdk-ses" rev="1.10.56" conf="compile->default(compile)"> </dependency>
+    <dependency org="com.amazonaws" name="aws-java-sdk-sqs" rev="1.10.56" conf="compile->default(compile)"> </dependency>
+    <dependency org="com.amazonaws" name="aws-java-sdk-elasticloadbalancing" rev="1.10.56" conf="compile->default(compile)"> </dependency>
+    <dependency org="commons-codec" name="commons-codec" rev="1.10" conf="compile->default(compile)"> </dependency>
+    <dependency org="commons-io" name="commons-io" rev="2.4" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.joda" name="joda-convert" rev="1.7" conf="compile->default(compile)"> </dependency>
+    <dependency org="org.clapper" name="grizzled-slf4j_2.11" rev="1.0.2" conf="compile->default(compile)"> </dependency>
+  </dependencies>
+</ivy-module>
